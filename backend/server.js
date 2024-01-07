@@ -6,7 +6,7 @@ const connectDB = require('./config/db');
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://app-crud-fronend.vercel.app/"],
+    origin: ["https://app-crud-fronend.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }));
