@@ -17,7 +17,7 @@ function UpdateProduct() {
   }, [])
   
   const load = async (id) => {
-    await axios.get('app-crud-psi.vercel.app/product/' + id)
+    await axios.get('app-crud-chi.vercel.app/product/' + id)
       .then((res) => {
         setData(res.data);
       })
@@ -33,7 +33,7 @@ function UpdateProduct() {
 
 const handleSubmit = async (event) => {
   event.preventDefault(); 
-  await axios.put('app-crud-psi.vercel.app/product/' + params.id, data)
+  await axios.put('app-crud-chi.vercel.app/product/' + params.id, data)
     .then((res) => {
       navigate('/');  
     })
