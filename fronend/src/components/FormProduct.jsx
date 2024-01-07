@@ -19,7 +19,7 @@ function FormProduct() {
     }, []);
 
     const loadData = async () => {
-        await axios.get('http://localhost:8080/product')
+        await axios.get('app-crud-psi.vercel.app/product')
             .then((res) => {
                 setData(res.data);
             })
